@@ -7,6 +7,7 @@ spring:
       #sql-script-encoding: utf-8
       driver-class-name: com.mysql.cj.jdbc.Driver
 
+  #配置自动建表：updata:没有表新建，有表更新操作,控制台显示建表语句
     jpa:
       database: mysql
       show-sql: true
@@ -19,3 +20,6 @@ spring:
     thymeleaf:
        cache: false
        mode: HTML
+
+server:
+  port: 8080
